@@ -1,11 +1,6 @@
 /*_________________________________________*/
 /*Kontakt*/
 
-main {
-    margin: 20px;
-    margin-top: 15vh;
-}
-
 #kontakt_main p {
     color: black;
     font-family: 'Noto Sans KR', sans-serif;
@@ -21,10 +16,6 @@ main {
 
 #kontakt_main input:valid {
     border-color: green;
-}
-
-form {
-    margin: 0 0 8rem;
 }
 
 form > * + *,
@@ -48,11 +39,12 @@ input {
     color: white;
     border: 1px solid #272726;
     background: #272726;
-    padding: 8px 12px 10px;
+    padding: 12px 30px;
     border-radius: 30px;
-    font-size: 1rem;
+    font-size: .8rem;
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase;
 }
 
 #send_message:hover {
