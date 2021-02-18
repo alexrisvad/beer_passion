@@ -6,16 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kontakt.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="">Alle øl</a></li>
+                <li><a href="">Mørke øl</a></li>
+                <li><a href="">Lyse øl</a></li>
+                <li><a href="">Sæsonøl</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="om.html">Om os</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main></main>
+    <main>
+        <div id="kontakt_main">
+            <p>Kontakt os på <b>info@krus.dk</b> eller udfyld formularen nedenfor.</p>
 
-    <footer></footer>
+
+            <form action="tak.html" name="kontakt" netlify>
+                <div class="form-group">
+                    <input id="name" name="name" type="text" placeholder="Navn" autocomplete="no" required>
+                </div>
+
+                <div class="form-group">
+                    <input id="email" placeholder="Email" name="email" type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" type="text" placeholder="Besked" rows="8" required></textarea>
+                </div>
+
+                <button id="send_message">Send Besked</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_col">
+            <div class="footer_col1">
+                <p><b>Adresse:</b> Guldbergsgade 29n, 2200 København N</p>
+
+                <p><b>Telefonnummer:</b> +45 45 30 28 41</p>
+
+                <p><b>Billeder lånt af:</b> KiHOSKH</p>
+            </div>
+            <div class="footer_col2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.8015898830636!2d12.554045515861795!3d55.69243720411356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253aafdcc00d9%3A0xf51490f299e6361f!2sGuldbergsgade%2029n%2C%202200%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1613564438009!5m2!1sda!2sdk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+
+        <p>© 2021 KRUS</p>
+    </footer>
 
 
     <script src="script.js"></script>

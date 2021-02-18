@@ -1,0 +1,90 @@
+/*_________________________________________*/
+/*Kontakt*/
+
+main {
+    margin: 20px;
+    margin-top: 15vh;
+}
+
+#kontakt_main p {
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#name,
+#email,
+#message {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#kontakt_main input:valid {
+    border-color: green;
+}
+
+form {
+    margin: 0 0 8rem;
+}
+
+form > * + *,
+fieldset > * + *:not(.address) {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: grid;
+}
+
+input {
+    border: 1px solid #21212133;
+    background: #f8f8f8;
+    padding: 8px 12px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#send_message {
+    color: white;
+    border: 1px solid #272726;
+    background: #272726;
+    padding: 8px 12px 10px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#send_message:hover {
+    color: #8faa7d;
+    transition: 0.6s ease;
+}
+
+#kontakt_main {
+    place-content: center;
+    padding-bottom: 1.5rem;
+}
+
+textarea {
+    border: 1px solid #21212133;
+    background: #f8f8f8;
+    padding: 8px 12px 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*----------------------------- Media Q's -----------------------------*/
+
+@media only screen and (min-width: 650px) {
+
+    main {
+        margin-top: 20vh;
+    }
+
+
+    #kontakt_main {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
