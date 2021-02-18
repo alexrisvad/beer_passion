@@ -1,0 +1,146 @@
+/*------------------------- Generelt -------------------------*/
+
+body {
+    margin: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    margin: 0 auto;
+    background-color: #F8F8F8;
+}
+
+h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h2 {}
+
+
+
+/*------------------------- Menu bar -------------------------*/
+
+header {
+    background-color: #F8F8F8;
+    display: flex;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    top: 0vw;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+
+.hidden {
+
+    display: none;
+    transform: scale(0);
+
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+
+#menuknap {
+    color: black;
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: -90vw;
+    cursor: pointer;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    display: inline-block;
+    position: absolute;
+    background-color: #272726;
+    min-width: 100%;
+    padding-bottom: 15px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    line-height: 70px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    font-weight: normal;
+}
+
+nav a:first-child {
+    display: inline;
+}
+
+/*------------------------- Footer -------------------------*/
+
+footer {
+    margin-top: 50px;
+    /*    position: fixed;*/
+    background-color: #272726;
+    position: relative;
+}
+
+.footer_col {
+    display: grid;
+}
+
+footer p {
+    color: white;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu {
+        position: relative;
+        padding-left: 0px;
+        background-color: #f8f8f8;
+    }
+
+    header {
+        justify-content: right;
+        padding-bottom: 0vw;
+        padding-top: 0vw;
+    }
+
+
+    nav a {
+        margin: 20px;
+        font-size: 1.3rem;
+        color: black;
+    }
+
+    nav a:hover {
+        color: #8faa7d;
+    }
+
+}
