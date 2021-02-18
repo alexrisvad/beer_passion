@@ -1,0 +1,67 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+article {
+
+    padding: 10px;
+    margin: 1em;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#filter nav {
+    text-align: center;
+}
+
+#filter button {
+    font-size: 1.5rem;
+    margin: 1vw;
+    font-family: 'Bebas Neue', cursive;
+    border-style: none;
+    background: none;
+    left: 7vw;
+    top: 14.5vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#filter .valgt {
+    background-color: #272726;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 30px;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+}
+
+h2,
+h3,
+h4 {
+    text-align: center;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media only screen and (min-width: 800px) {
+
+
+    #filter button:hover {
+        background-color: #8faa7d;
+        transition: 0.6s ease;
+        border-radius: 30px;
+        padding: 12px 30px;
+    }
+
+}

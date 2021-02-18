@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <title>Øl</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="beer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
@@ -44,9 +45,27 @@
     </header>
 
     <main>
-        <h1>Velkommen til KRUS!</h1>
+        <h1>Øl</h1>
+
+        <div id="filter">
+            <nav>
+                <button data-kategori="alle" class="valgt">Alle</button>
+                <button data-kategori="seasonol">Sæson øl</button>
+                <button data-kategori="lyseol">Lyse øl</button>
+                <button data-kategori="morkeol">Mørke øl</button>
+            </nav>
+        </div>
 
 
+        <section></section>
+        <template>
+            <article>
+                <img src="" alt="" class="billede">
+                <h2 class="navn"></h2>
+                <h3 class="type"></h3>
+                <h2 class="pris"></h2>
+            </article>
+        </template>
     </main>
 
     <footer>
@@ -59,9 +78,11 @@
                 <p><b>Billeder lånt af:</b> KiHOSKH</p>
             </div>
             <div class="footer_col2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.8015898830636!2d12.554045515861795!3d55.69243720411356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253aafdcc00d9%3A0xf51490f299e6361f!2sGuldbergsgade%2029n%2C%202200%20K%C3%B8benhavn!5e0!3m2!1sda!2sdk!4v1613564438009!5m2!1sda!2sdk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0661457075917!2d12.55210708232825!3d55.691943552039454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253abae55267d%3A0x7f06e00bd751130a!2sKEA%20K%C3%B8benhavns%20Erhvervsakademi%20-%20Main%20Campus!5e0!3m2!1sda!2sdk!4v1613657758765!5m2!1sda!2sdk" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
         <div id="copyright">
             <p>© 2021 KRUS</p>
