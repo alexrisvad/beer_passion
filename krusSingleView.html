@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krus</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #ffffff;
+    }
+
+    /*
+    #lang_beskrivelse {
+        padding-right: 400px;
+        padding-left: 400px;
+
+    }
+*/
+
+    button {
+        font-size: 1.5rem;
+        margin: 1vw;
+        font-family: 'Bebas Neue', cursive;
+        border-style: none;
+        background: none;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-radius: 10px;
+
+    }
+
+    button:hover {
+        background-color: rgb(255, 179, 79);
+    }
+
+    article {
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 1em;
+
+    }
+
+
+    .billede {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 45%;
+
+    }
+
+
+
+
+    h2,
+    h3 {
+        color: black;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2rem;
+    }
+
+    .navn {
+        font-size: 3rem;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+
+        .billede {
+            max-width: 100%;
+        }
+
+
+        article {
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 1em;
+
+        }
+
+
+
+        /*
+        #lang_beskrivelse {
+            text-align: left;
+            padding: 0;
+
+        }
+*/
+
+
+
+    }
+
+</style>
+
+<body>
+
+    <section></section>
+
+    <article>
+        <button>Tilbage til forside</button>
+        <img src="" alt="" class="billede">
+        <h1 class="type"></h1>
+        <h1 class="navn"></h1>
+        <h2 class="beskrivelse"></h2>
+        <h1 class="pris"></h1>
+    </article>
+</body>
+
+</html>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
+
+    const medieurl = "https://passiongruppe16-bb8a.restdb.io/media/";
+    let ol;
+    const myHeaders = {
+
+        "x-apikey": "602e232f5ad3610fb5bb6229"
+    }
+    console.log("ID", id);
+    document.addEventListener("DOMContentLoaded", hentData);
+
+    async function hentData() {
+        const respons = await fetch(`https://passiongruppe16-bb8a.restdb.io/rest/indholdsliste/${id}`, {
+            headers: myHeaders
+        });
+
+        ol = await respons.json();
+
+        console.log("drik", ol);
+        visOl(ol);
+
+    }
+
+    function visOl() {
+        document.querySelector(".billede").textContent = ol.navn;
+        document.querySelector(".billede").src = medieurl + ol.billede;
+        document.querySelector(".navn").textContent = ol.navn;
+        document.querySelector(".type").textContent = ol.type;
+        document.querySelector(".beskrivelse").textContent = ol.beskrivelse;
+        document.querySelector(".pris").textContent = (`Pris: ${ol.pris}`);
+        document.querySelector("button").addEventListener("click", tilbageTilForside);
+    }
+
+    function tilbageTilForside() {
+        history.back();
+    }
+
+</script>
