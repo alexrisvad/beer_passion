@@ -70,8 +70,7 @@ function filtrerOl() {
     document.querySelector(".valgt").classList.remove("valgt"); //fjern klassen valgt fra den knap der er klikket på
     this.classList.add("valgt"); // marker den knap der er klikket på
     visOl(); // kald funktionen visOl efter det nye filter er sat på
-    header.textContent = this.textContent;
-
+    //    header.textContent = this.textContent;
 }
 
 async function loadJSON() {
@@ -93,6 +92,7 @@ function visOl() {
     dest.textContent = ""; //ryd container inden ny loop
 
     ol.forEach(drik => {
+        console.log(filter, drik.kategori);
 
         if (filter == drik.kategori || filter == "alle") {
             const klon = skabelon.cloneNode(true);
