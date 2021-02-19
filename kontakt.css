@@ -41,9 +41,9 @@ input {
     background: #272726;
     padding: 12px 30px;
     border-radius: 30px;
-    font-size: .8rem;
+    font-size: 1.3rem;
     cursor: pointer;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
 }
 

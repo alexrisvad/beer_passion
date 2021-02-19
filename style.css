@@ -23,14 +23,19 @@ main {
     margin-top: 15vh;
 }
 
-h1 {
-    font-family: 'Noto Sans KR', sans-serif;
-    text-align: center;
-    margin-bottom: 60px;
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
 }
 
-h2 {
-    font-family: 'Noto Sans KR', sans-serif;
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 3rem;
 }
 
 p {
@@ -96,9 +101,9 @@ header {
 
 header a {
     text-decoration: none;
-    font-size: 1.4rem;
-    line-height: 70px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.5rem;
+    line-height: 100px;
+    font-family: 'Bebas Neue', cursive;
     color: white;
     font-weight: normal;
     text-transform: uppercase;
@@ -123,8 +128,8 @@ header a:first-child {
     cursor: pointer;
     padding: 15px;
     border-radius: 30px;
-    font-size: 15px;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
     transition: 0.6s ease;
     text-transform: uppercase;
 }
@@ -173,6 +178,9 @@ footer #copyright p {
         margin-top: 20vh;
     }
 
+    h1 {
+        font-size: 4.5rem;
+    }
 
     #logo img {
         left: 20px;
@@ -218,7 +226,7 @@ footer #copyright p {
 
     header a {
         margin: 15px;
-        font-size: 1.3rem;
+        font-size: 2.2rem;
         color: white;
         line-height: 0;
     }
