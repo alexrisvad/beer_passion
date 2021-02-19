@@ -4,120 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krus</title>
+    <title>KrusSingleView</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="singleView.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<style>
-    body {
-        background-color: #ffffff;
-    }
 
-    /*
-    #lang_beskrivelse {
-        padding-right: 400px;
-        padding-left: 400px;
-
-    }
-*/
-
-    button {
-        font-size: 1.5rem;
-        margin: 1vw;
-        font-family: 'Bebas Neue', cursive;
-        border-style: none;
-        background: none;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        border-radius: 10px;
-
-    }
-
-    button:hover {
-        background-color: rgb(255, 179, 79);
-    }
-
-    article {
-        border: none;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 1em;
-
-    }
-
-
-    .billede {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 45%;
-
-    }
-
-
-
-
-    h2,
-    h3 {
-        color: black;
-        font-family: 'Bebas Neue', cursive;
-    }
-
-    h1 {
-        text-align: center;
-        color: black;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 2rem;
-    }
-
-    .navn {
-        font-size: 3rem;
-    }
-
-
-    @media only screen and (max-width: 600px) {
-
-        .billede {
-            max-width: 100%;
-        }
-
-
-        article {
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 1em;
-
-        }
-
-
-
-        /*
-        #lang_beskrivelse {
-            text-align: left;
-            padding: 0;
-
-        }
-*/
-
-
-
-    }
-
-</style>
 
 <body>
+    <header>
+        <div id="logo">
+            <a href="forside.html"><img src="billeder/krus_logo_black.png" alt="Krus logo"></a>
+        </div>
+        <nav>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="beer.html">Øl</a>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="om.html">Om os</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section></section>
+    <section>
+        <article>
 
-    <article>
-        <button>Tilbage til forside</button>
+            <h1 class="navn"></h1>
+            <h1 class="type"></h1>
+            <h2 class="pris"></h2>
+
+            <h2 class="beskrivelse"></h2>
+        </article>
         <img src="" alt="" class="billede">
-        <h1 class="type"></h1>
-        <h1 class="navn"></h1>
-        <h2 class="beskrivelse"></h2>
-        <h1 class="pris"></h1>
-    </article>
+
+    </section>
 </body>
 
 </html>
@@ -153,12 +75,7 @@
         document.querySelector(".navn").textContent = ol.navn;
         document.querySelector(".type").textContent = ol.type;
         document.querySelector(".beskrivelse").textContent = ol.beskrivelse;
-        document.querySelector(".pris").textContent = (`Pris: ${ol.pris}`);
-        document.querySelector("button").addEventListener("click", tilbageTilForside);
-    }
-
-    function tilbageTilForside() {
-        history.back();
+        document.querySelector(".pris").textContent = ol.pris;
     }
 
 </script>
