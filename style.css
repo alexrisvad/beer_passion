@@ -42,7 +42,7 @@ p {
 /*------------------------- Menu bar -------------------------*/
 
 header {
-    background-color: #F8F8F8;
+    background-color: #272726;
     display: flex;
     font-size: 1.5rem;
     padding-top: 10px;
@@ -58,8 +58,8 @@ header {
     width: 80px;
     height: auto;
     position: absolute;
-    margin-left: 20px;
-    margin-top: 8px;
+    margin-left: 29px;
+    margin-top: 18px;
     z-index: 100;
 
 }
@@ -81,6 +81,7 @@ header {
     top: 10px;
     right: -90vw;
     cursor: pointer;
+    font-size: 7vw;
 }
 
 #menu {
