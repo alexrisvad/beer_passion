@@ -21,10 +21,13 @@ html {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
+}
+
+h4 {
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
