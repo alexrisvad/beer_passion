@@ -15,7 +15,7 @@
 <body>
     <header>
         <div id="logo">
-            <a href="forside.html"><img src="billeder/krus_logo_black.png" alt="Krus logo"></a>
+            <a href="forside.html"><img src="billeder/krus_logo_white.png" alt="Krus logo"></a>
         </div>
         <nav>
             <div id="menuknap">☰</div>
@@ -70,6 +70,29 @@
 </html>
 
 <script>
+    //Burger menu
+
+    window.addEventListener("load", sidenVises);
+
+    function sidenVises() {
+        console.log("sidenVises");
+        document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+    }
+
+    function toggleMenu() {
+        console.log("toggleMenu");
+        document.querySelector("#menu").classList.toggle("hidden");
+
+        let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+
+        if (erSkjult == true) {
+            document.querySelector("#menuknap").textContent = "☰";
+        } else {
+            document.querySelector("#menuknap").textContent = "✕";
+        }
+    }
+
+
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get("id");
 
