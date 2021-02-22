@@ -9,18 +9,6 @@ article {
 
     padding: 10px;
     margin: 1em;
-    cursor: pointer;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-article:hover {
-    opacity: 0.2;
-/*    background-color: #FCF69A;*/
 }
 
 img {
@@ -72,6 +60,21 @@ h4 {
         transition: 0.6s ease;
         border-radius: 30px;
         padding: 12px 30px;
+    }
+
+    article {
+        cursor: pointer;
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    article:hover {
+        opacity: 0.2;
+        /*    background-color: #FCF69A;*/
     }
 
 }

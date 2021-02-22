@@ -134,10 +134,6 @@ header a:first-child {
     text-transform: uppercase;
 }
 
-#myBtn:hover {
-    background-color: #8faa7d;
-}
-
 /*------------------------- Footer -------------------------*/
 
 footer {
@@ -234,6 +230,10 @@ footer #copyright p {
     header a:hover {
         color: #8faa7d;
         transition: 0.6s ease;
+    }
+
+    #myBtn:hover {
+        background-color: #8faa7d;
     }
 
 
