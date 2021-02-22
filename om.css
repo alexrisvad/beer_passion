@@ -1,0 +1,32 @@
+img {
+    background-size: cover;
+    max-width: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: -30px;
+}
+
+.col2 {
+    margin: 20px;
+    margin-top: 2.5rem;
+}
+
+@media only screen and (min-width: 800px) {
+
+
+    .col2 {
+
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .col2 p,
+    h2 {
+        text-align: left;
+    }
+
+
+}
