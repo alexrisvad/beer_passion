@@ -5,6 +5,8 @@ window.addEventListener("load", sidenVises);
 function sidenVises() {
     console.log("sidenVises");
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+
+    loadJSON();
 }
 
 function toggleMenu() {

@@ -149,8 +149,6 @@ footer {
     margin-top: 15vh;
     background-color: #272726;
     position: relative;
-    padding-top: 2vh;
-
 }
 
 .footer_wrapper {
@@ -163,12 +161,13 @@ footer {
     margin: auto;
     text-align: left;
     padding-bottom: 2vh;
+    margin: 20px;
 }
 
 #footer_icons img {
     height: 2rem;
     width: 2rem;
-    margin: 10px;
+    margin-right: 20px;
 }
 
 footer iframe {
@@ -260,6 +259,7 @@ footer iframe {
 
     footer {
         margin-top: 15vh;
+        padding-top: 2vh;
     }
 
     .footer_col1 {

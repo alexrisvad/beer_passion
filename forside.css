@@ -1,3 +1,9 @@
+#section_1 {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 74px;
+}
+
 #section_2 {
     margin: auto;
     text-align: center;
@@ -38,6 +44,11 @@
     text-decoration: underline;
 }
 
+#kort_om {
+    margin: 20px;
+    text-align: left;
+}
+
 #section_3 img {
     background-size: cover;
     max-width: none;
@@ -45,7 +56,6 @@
     height: auto;
     margin: 0;
     margin-top: -30px;
-    /*    opacity: 0.3;*/
     background-color: #FDA6D0;
 }
 
