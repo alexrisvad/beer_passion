@@ -1,3 +1,12 @@
+article {
+    background-color: #FCF69A;
+    padding-bottom: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
 .billede {
     max-width: 100%;
     object-fit: contain;
@@ -6,7 +15,6 @@
 
 button {
     font-size: 1.3rem;
-    margin: 1vw;
     font-family: 'Bebas Neue', cursive;
     border-style: none;
     background: none;
@@ -22,27 +30,21 @@ button {
 
 .webshop {
     font-size: 1.3rem;
-    margin: -50vw;
     font-family: 'Bebas Neue', cursive;
     border-style: none;
     background: none;
-    border-radius: 30px;
-    background-color: #FDA6D0;
-    color: white;
+    color: black;
     cursor: pointer;
-    position: relative;
-    padding: 12px 30px;
-    margin-left: 28%;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .beskrivelse {
     color: black;
     font-family: 'Noto Sans KR', sans-serif;
     text-align: left;
-    margin: 30px;
     font-size: 1rem;
     text-transform: none;
+    margin: 20px;
 }
 
 .type {
@@ -50,6 +52,7 @@ button {
     color: grey;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
+    margin: 20px;
 }
 
 .navn {
@@ -58,6 +61,8 @@ button {
     color: black;
     font-family: 'Bebas Neue', cursive;
     font-size: 2rem;
+    margin: 20px;
+    padding-top: 15px;
 }
 
 .pris {
@@ -66,36 +71,13 @@ button {
     text-align: center;
     font-size: 1rem;
     text-transform: none;
+    margin: 20px;
 }
 
 .ikoner {
     padding-bottom: 30px;
+    margin: 10px;
 }
-
-
-
-@media only screen and (min-width: 600px) {
-
-
-
-    section {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .beskrivelse {
-        margin: 20px;
-    }
-
-    .billede {
-        padding-top: 200px;
-    }
-
-    .webshop {
-        margin-left: 35%;
-    }
-}
-
 
 
 
@@ -103,21 +85,31 @@ button {
 
 
     .navn {
-        padding-right: 27px;
-        padding-top: 258px;
+        /*        padding-top: 258px;*/
+        text-align: left;
+    }
+
+    .type {
+        text-align: left;
+    }
+
+    .pris {
+        text-align: left;
+    }
+
+    .beskrivelse {
+        text-align: left;
     }
 
     section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 120px;
+        margin-right: 120px;
     }
 
     .billede {
-        padding-top: 300px;
-    }
-
-    .webshop {
-        margin-left: 25%;
+        padding-top: 200px;
     }
 
     button:hover {
@@ -125,43 +117,12 @@ button {
         transition: 0.6s ease;
     }
 
-    .webshop:hover {
-        background-color: #8faa7d;
-        transition: 0.6s ease;
+    article {
+        margin-top: 220px;
     }
 
-}
-
-
-
-
-
-@media only screen and (min-width: 1200px) {
-
-
-    .billede {
-        max-width: 80%;
-        padding-top: 300px;
-        margin-left: 100px;
+    button {
+        margin-left: 0px;
     }
 
-    .webshop {
-        margin-left: 35%;
-    }
-}
-
-
-
-@media screen and (max-width: 1440px) {
-
-    width: 100%;
-    padding-right: 5vw;
-
-
-    .billede {
-        max-width: 80%;
-
-
-        margin-left: 100px;
-    }
 }
