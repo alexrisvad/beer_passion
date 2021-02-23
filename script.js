@@ -110,5 +110,5 @@ function visOl() {
 }
 
 function visDetaljer(hvad) {
-    location.href = `krusSingleView.html?id=${hvad._id}`;
+    location.href = `singleView.html?id=${hvad._id}`;
 }
