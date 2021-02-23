@@ -4,10 +4,6 @@
     margin-bottom: 74px;
 }
 
-
-
-
-
 .forside_knap {
     font-size: 1.5rem;
     margin: 1vw;
@@ -22,12 +18,7 @@
     color: white;
     border-radius: 30px;
     padding: 12px 30px;
-
-
-
 }
-
-
 
 .forside_knap:hover {
     background-color: #8faa7d;
@@ -36,9 +27,6 @@
     border-radius: 30px;
     padding: 12px 30px;
 }
-
-
-
 
 .omos_knap {
     font-size: 1.5rem;
@@ -60,12 +48,7 @@
     transform: translate(-50%, -50%);
     background-color: #272726;
     font-size: 1.5rem;
-
-
-
 }
-
-
 
 .omos_knap:hover {
     background-color: #FDA6D0;
@@ -75,8 +58,6 @@
     padding: 20px 70px;
 }
 
-
-
 img {
     background-size: cover;
     max-width: none;
@@ -85,21 +66,13 @@ img {
     margin: 0;
     margin-top: -30px;
     opacity: 0.7;
-
-
-
 }
-
-
 
 #section_3 {
     position: relative;
     text-align: center;
     margin-bottom: 0;
 }
-
-
-
 
 #forside_footer {
     margin-top: 25px;
