@@ -26,6 +26,10 @@ h3 {
     font-family: 'Bebas Neue', cursive;
 }
 
+h3 {
+    color: grey;
+}
+
 h4 {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -40,6 +44,11 @@ h1 {
 
 p {
     font-family: 'Noto Sans KR', sans-serif;
+}
+
+#tak p {
+    text-align: center;
+    line-height: 2rem;
 }
 
 
@@ -140,7 +149,7 @@ footer {
     margin-top: 15vh;
     background-color: #272726;
     position: relative;
-    padding-top: 5vh;
+    padding-top: 2vh;
 
 }
 
@@ -148,12 +157,18 @@ footer {
     display: grid;
 }
 
-footer p {
+.footer_col1 {
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
-    margin: 20px;
-    text-align: right;
-    margin-top: 0;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+#footer_icons img {
+    height: 2rem;
+    width: 2rem;
+    margin: 10px;
 }
 
 footer iframe {
@@ -161,10 +176,11 @@ footer iframe {
     max-width: 100vw;
 }
 
-footer #copyright p {
+#copyright {
     text-align: center;
     margin: 0;
-    padding: 4vh;
+    padding: 2vh;
+    color: white;
 }
 
 
@@ -237,16 +253,40 @@ footer #copyright p {
     .footer_wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-right: 120px;
+        margin-left: 120px;
+        grid-gap: 40px;
     }
 
     footer {
         margin-top: 15vh;
     }
 
-    footer iframe {
-        max-width: 1000px;
-        max-height: auto;
-        float: right;
+    .footer_col1 {
+        margin-left: 0;
     }
 
+    #footer_icons img {
+        transition: transform .5s ease;
+    }
+
+    #footer_icons img:hover {
+        transform: scale(1.2);
+    }
+
+    footer iframe {
+        max-width: 45vw;
+        max-height: auto;
+        padding-top: 3vh;
+    }
+
+}
+
+@media only screen and (min-width: 1168px) {
+
+
+    footer iframe {
+        padding-top: 4vh;
+        max-height: 30vh;
+    }
 }

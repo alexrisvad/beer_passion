@@ -55,11 +55,6 @@ input {
     text-transform: uppercase;
 }
 
-#send_message:hover {
-    background-color: #8faa7d;
-    transition: 0.6s ease;
-}
-
 #kontakt_main {
     place-content: center;
     padding-bottom: 1.5rem;
@@ -82,5 +77,10 @@ textarea {
     #kontakt_main {
         width: 600px;
         margin: 0 auto;
+    }
+
+    #send_message:hover {
+        background-color: #8faa7d;
+        transition: 0.6s ease;
     }
 }
