@@ -11,7 +11,7 @@
 }
 
 .forside_knap {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1vw;
     font-family: 'Bebas Neue', cursive;
     border-style: none;
@@ -42,6 +42,7 @@
     background: none;
     color: black;
     text-decoration: underline;
+    padding: 0;
 }
 
 #kort_om {
@@ -71,16 +72,22 @@
 
 @media only screen and (min-width: 800px) {
 
+    #section_3 img {
+        position: relative;
+    }
+
     #kort_om {
-        position: absolute;
-        top: 20%;
-        left: 35%;
         background-color: white;
         opacity: 0.9;
         max-width: 400px;
         text-align: left;
         padding: 20px;
         margin: auto;
+        z-index: 100;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 

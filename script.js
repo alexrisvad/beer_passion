@@ -102,7 +102,8 @@ function visOl() {
             klon.querySelector(".billede").src = medieurl + drik.billede;
             klon.querySelector(".navn").textContent = drik.navn;
             klon.querySelector(".type").textContent = drik.type;
-            klon.querySelector(".pris").textContent = (`Pris: ${drik.pris}`);
+            klon.querySelector(".pris").textContent = (`Pris: ${drik.pris} DKK`);
+
             klon.querySelector("article").addEventListener("click", () => visDetaljer(drik));
             dest.appendChild(klon);
         }
