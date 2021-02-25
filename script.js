@@ -25,9 +25,9 @@ function toggleMenu() {
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 300px from the top of the document, show the button
 window.onscroll = function () {
-    scrollFunction()
+    scrollFunction();
 };
 
 function scrollFunction() {
@@ -51,7 +51,7 @@ const medieurl = "https://passiongruppe16-bb8a.restdb.io/media/";
 
 const myHeaders = {
     'x-apikey': "602e232f5ad3610fb5bb6229"
-}
+};
 
 
 document.addEventListener("DOMContentLoaded", start);
@@ -107,7 +107,7 @@ function visOl() {
             klon.querySelector("article").addEventListener("click", () => visDetaljer(drik));
             dest.appendChild(klon);
         }
-    })
+    });
 }
 
 function visDetaljer(hvad) {
