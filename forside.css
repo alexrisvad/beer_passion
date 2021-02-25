@@ -3,31 +3,34 @@
 #section_1 {
     margin: auto;
     text-align: center;
-    margin-bottom: 74px;
-    margin-top: -100px;
+    margin-top: 100px;
 }
+
+#section_1 h1 {
+    margin-bottom: -20px;
+}
+
 
 #udvalgt_ol img {
     background-size: cover;
     max-width: none;
-    width: 60%;
+    width: 80%;
     height: auto;
     margin: 0;
-    transform: rotate(90deg);
 }
 
 #info {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -100px;
 }
 
 #section_2 {
     margin: auto;
     text-align: center;
-    margin-bottom: 74px;
-    padding: 100px;
+    /*    margin-bottom: 74px;*/
+    padding: 50px;
+    background-color: #fcf69a;
+    margin-top: 50px;
+    margin-bottom: 65px;
 }
 
 .forside_knap {
@@ -57,7 +60,7 @@
 /*----------------------------- Section 3 -----------------------------*/
 
 .om_knap {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Bebas Neue', cursive;
     border-style: none;
     cursor: pointer;
@@ -69,7 +72,7 @@
 
 #kort_om {
     margin: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 #section_3 img {
@@ -89,6 +92,16 @@
 
 @media only screen and (min-width: 800px) {
 
+    #section1_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #info {
+        margin-top: -60px;
+    }
+
+
     #section_3 img {
         position: relative;
     }
@@ -107,5 +120,21 @@
         transform: translate(-50%, -50%);
     }
 
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #info {
+        margin-top: -10px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #info {
+        margin-top: 50px;
+    }
 
 }
