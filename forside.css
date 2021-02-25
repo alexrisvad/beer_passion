@@ -3,22 +3,22 @@
 #section_1 {
     margin: auto;
     text-align: center;
-    margin-bottom: 74px;
-    margin-top: -100px;
+    /*    margin-bottom: 74px;*/
+    margin-top: 100px;
 }
 
 #udvalgt_ol img {
     background-size: cover;
     max-width: none;
-    width: 60%;
+    width: 50%;
     height: auto;
     margin: 0;
-    transform: rotate(90deg);
+    /*    transform: rotate(90deg);*/
 }
 
 #info {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -26,8 +26,8 @@
 #section_2 {
     margin: auto;
     text-align: center;
-    margin-bottom: 74px;
-    padding: 100px;
+    /*    margin-bottom: 74px;*/
+    padding: 50px;
 }
 
 .forside_knap {
