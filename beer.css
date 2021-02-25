@@ -75,6 +75,10 @@ h3 {
     color: grey;
 }
 
+#link h4 {
+    text-decoration: underline;
+}
+
 /*----------------------------- Media Q's -----------------------------*/
 
 @media only screen and (min-width: 800px) {

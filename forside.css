@@ -99,8 +99,17 @@
 
     #info {
         margin-top: -60px;
+        text-align: left;
+
     }
 
+    #info h1 {
+        text-align: left;
+    }
+
+    #info button {
+        margin-left: 0;
+    }
 
     #section_3 img {
         position: relative;
